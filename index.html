@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- maximum-scale=1 para iphone = para não dar zoom na barra de pesquisa quando o usuário clicar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/icons8-weather-240.svg" type="image/x-icon">
+  
+    <link rel="shortcut icon" href="assets/icons8-weather-240.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>Snapclima</title>
 </head>
@@ -26,37 +27,37 @@
 
     <section class="current-temperature">
         <img class="current-temperature__weather-icon" id="weather-icon" src="./assets/loading-icon.svg" alt="...">
-        <div class="current-temperature__description" id="weather-description">Nublado</div>
-        <div class="current-temperature__info-label">Tempo agora</div>
-        <div class="current-temperature__current-temperature" id="current-temperature">25ºC</div>
+        <div class="current-temperature__description" id="weather-description">...</div>
+        <div class="current-temperature__info-label"></div>
+        <div class="current-temperature__current-temperature" id="current-temperature"></div>
     </section>
 
     <div class="bottom-container">
         <section class="temperature-details">
             <div class="temperature-details__item">
                 <div class="temperature-details__label">Vento</div>
-                <div class="temperature-details__value" id="wind-speed">19km</div>
+                <div class="temperature-details__value" id="wind-speed">...</div>
             </div>
             <div class="temperature-details__item">
                 <div class="temperature-details__label">Sensação</div>
-                <div class="temperature-details__value" id="feels-like-temperature">25º</div>
+                <div class="temperature-details__value" id="feels-like-temperature">...</div>
             </div>
 
             <div class="temperature-details__item">
-                <div class="temperature-details__label">Umidade</div>
-                <div class="temperature-details__value" id="current-humidity">83%</div>
+                <div class="temperature-details__label">Humidade</div>
+                <div class="temperature-details__value" id="current-humidity">...</div>
             </div>
         </section>
         <section class="sunset-sunrise">
 
             <div class="sunset-sunrise__item">
                 <img class="sunset-sunrise__icon" src="./assets/sunrise.svg" alt="Nascer do sol">
-                <div class="sunset-sunrise__value" id="sunrise-time">5:39</div>
+                <div class="sunset-sunrise__value" id="sunrise-time">...</div>
             </div>
             
             <div class="sunset-sunrise__item">             
                 <img class="sunset-sunrise__icon" src="./assets/sunset.svg" alt="Pôr do sol">
-                <div class="sunset-sunrise__value" id="sunset-time">18:57</div>              
+                <div class="sunset-sunrise__value" id="sunset-time">...</div>              
             </div>
         </section>
     </div>
