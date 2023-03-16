@@ -4,7 +4,7 @@
 }
 
 body{
-    background: linear-gradient(1800deg, rgba(89,76,238,1)35%, #5fbfd0 100%); 
+    background: linear-gradient( rgb(89, 76, 238), #5fbfd0 100%); 
     color: #091668;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased; /* deixa a fonte mais definida no google chrome */
@@ -92,7 +92,7 @@ body{
   }
 .current-temperature__description{
     margin-top: 30px;
-    color: #b6aef0;
+    color: #362f6b;
     font-size: 24px;
 }
 .current-temperature__info-label{
@@ -102,17 +102,17 @@ body{
 }
 
 .current-temperature__current-temperature{
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 24px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 /* Bottom container */
 
 .bottom-container{
-    background: #fff;
+    background: rgb(255, 255, 255);
     position: absolute;
-    bottom: 5;
+    bottom: 0;
     width: 100%;
     border-radius: 25px 25px 0 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
