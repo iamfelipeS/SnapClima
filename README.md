@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./assets/snapclimaLogo.svg"/>
   <p>Smart weather for your location </p>
-  <p><a href="https://github.com/iamfelipeS/SnapClima" target="_blank">Access project</a></p>
+  <p><a href="https://snapclima23.netlify.app/" target="_blank">Access project</a></p>
 </h1>
 
 <img src="./assets/demoSnap.gif">
