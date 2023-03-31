@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <!-- maximum-scale=1 para iphone = para não dar zoom na barra de pesquisa quando o usuário clicar -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-  
-    <link rel="shortcut icon" href="assets/icons8-weather-240.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Snapclima</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <!-- maximum-scale=1 para iphone = para não dar zoom na barra de pesquisa quando o usuário clicar -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="assets/icons8-weather-240.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./script/app.js" defer></script>
+        <title>Snapclima</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" col-md>
         <div class="header__city-search-bar">
             <input class="header__input" id="city-search-input" type="search" placeholder="Temperatura de qual cidade?">
             <button class="header__button" id="city-search-button">
@@ -63,6 +64,5 @@
             </div>
         </section>
     </div>
-    <script src="./script/app.js"></script>
 </body>
 </html>

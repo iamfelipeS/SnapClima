@@ -4,8 +4,8 @@
 }
 
 body{
-    background: linear-gradient( rgb(89, 76, 238), #5fbfd0 100%); 
-    color: #091668;
+    background: linear-gradient( #594cee, #5fbfd0 ); 
+  
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased; /* deixa a fonte mais definida no google chrome */
 }
