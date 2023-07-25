@@ -4,8 +4,8 @@
 }
 
 body{
-    background: linear-gradient( #594cee, #5fbfd0 ); 
-  
+    background: linear-gradient(to bottom, #594cee, #5fbfd0 ); 
+    background: #594cee;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased; /* deixa a fonte mais definida no google chrome */
 }
@@ -128,7 +128,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-     border-right: 1px solid #a2a2be;   /*linha de separação dos itens  */
+     border-right: 1px solid #bea2a2;   /*linha de separação dos itens  */
   }
   
   .temperature-details__item:last-child{
