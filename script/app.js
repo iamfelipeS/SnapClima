@@ -1,5 +1,13 @@
 // interaction
-const citySearchInput = document.getElementById('city-search-input')
+const citySearchInput = document.getElementById('city-search-input');
+
+citySearchInput.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault()
+    let cityName = citySearchInput.value
+    getCityWeather(cityName);
+  }
+});  
 const citySearchButton = document.getElementById('city-search-button')
 
 // Exhibition
