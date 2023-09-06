@@ -1,16 +1,17 @@
-// interaction
+// interação
 const citySearchInput = document.getElementById('city-search-input');
 
-citySearchInput.addEventListener('keypress', function(event) {
+citySearchInput.addEventListener('keypress', function (event) {
   if (event.key === 'Enter') {
     event.preventDefault()
     let cityName = citySearchInput.value
     getCityWeather(cityName);
   }
-});  
+});
+
 const citySearchButton = document.getElementById('city-search-button')
 
-// Exhibition
+// Exibição
 const currentDate = document.getElementById('current-date')
 const cityName = document.getElementById('city-name')
 
@@ -41,9 +42,9 @@ navigator.geolocation.getCurrentPosition(
 
   },
   (err) => {
-    if(err.code === 1){
+    if (err.code === 1) {
       alert("Geolocalização negada pelo usuário, busque manualmente por uma cidade através da barra de pesquisa.")
-    } else{
+    } else {
       console.log(err)
     }
   }
@@ -51,25 +52,25 @@ navigator.geolocation.getCurrentPosition(
 
 function getCurrentLocationWeather(lat, lon) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=pt_br&appid=${api_key}`)
-      .then((response) => response.json())
-      .then((data) => displayWeather(data))
+    .then((response) => response.json())
+    .then((data) => displayWeather(data))
 }
 
 
-function getCityWeather(cityName){
+function getCityWeather(cityName) {
 
   weatherIcon.src = `./assets/loading-icon.svg`
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=pt_br&appid=${api_key}`)
-  .then((response) => response.json())
-  .then((data) => displayWeather(data))
+    .then((response) => response.json())
+    .then((data) => displayWeather(data))
 }
 
 function displayWeather(data) {
-  let{
-    dt, 
-    name, 
-    weather: [{icon, description }],
+  let {
+    dt,
+    name,
+    weather: [{ icon, description }],
     main: { temp, feels_like, humidity },
     wind: { speed },
     sys: { sunrise, sunset },
@@ -93,7 +94,7 @@ function formatDate(epochTime) {
   return `Hoje, ${formattedDate}`
 }
 
-function formatTime(epochTime){
+function formatTime(epochTime) {
   let date = new Date(epochTime * 1000)
   let hours = date.getHours()
   let minutes = date.getMinutes()
